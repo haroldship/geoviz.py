@@ -22,7 +22,7 @@ class Map(object):
         pass
 
     def show(self):
-        return '<iframe src="http://www.yahoo.com">'
+        return '<iframe src="%s">' % (self.url)
 
 print 'geoviz.py loaded'
 
