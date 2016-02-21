@@ -18,7 +18,7 @@ class Map(object):
 
     def update(self):
         if not self.url:
-            raise RuntimeError('cannot update without url') 
+            raise ValueError('cannot update without url') 
         pass
 
     def show(self):
