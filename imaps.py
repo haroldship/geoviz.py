@@ -10,7 +10,7 @@ class Map(object):
             endpoint += '/'
         self.apikey = apikey
         self.apikey_password = apikey_password
-        self.style = self.endpoint + self.mapid
+        self.style = self.endpoint + 'rest' + self.apikey + '/maps/' + self.mapid
 
     def publish(self):
         return self.url
