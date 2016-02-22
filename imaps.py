@@ -11,7 +11,7 @@ class Map(object):
         self.apikey = apikey
         self.apikey_password = apikey_password
         self.mapid = mapid
-        self.url = self.endpoint + '/maps/' + self.mapid
+        self.url = self.endpoint + '/maps/' + self.mapid + '/embed'
 
     def publish(self):
         return self.url
